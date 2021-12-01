@@ -1,0 +1,88 @@
+:root {
+  --wine-red: #C7375F;
+  --bright-red: #D42D2F;
+  --dark-green: #344D2F;
+  --light-green: #77A047;
+  --gold: #FAC57D;
+  --snow: #F0F4F7;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: var(--dark-green);
+    background-color: var(--snow);
+    
+}
+.christmas-header {
+    font-size: 45px;
+    margin-bottom: 0; 
+    color: var(--dark-green);
+    text-shadow: 2px 2px 5px var(--bright-red);
+}
+.main-container {
+    box-shadow: 2px 2px 20px var(--bright-red);
+    border-radius: 5px;
+    padding: 0 40px 40px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: var(--wine-red);
+    color: var(--snow);
+    padding: 1em 2em;
+    border-radius: 5px;
+    box-shadow: 2px 2px 20px var(--wine-red);
+}
+.btn-container {
+    transition: all .2s ease-in-out;
+}
+
+.countdown-display {
+    font-size: 100px;
+    margin: 0;
+    padding: 10px;
+}
+
+.countdown-text {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px 25px;
+    margin: 0 10px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.countdown-seconds {
+    color: var(--gold);
+    text-shadow: 2px 2px 20px var(--gold);
+}
+
+.btn {
+    display: inline-block;
+    margin: 20px 25px 25px 25px;
+    padding: 25px 25px;
+    background: var(--light-green);
+    color: var(--snow);
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    box-shadow: 2px 2px 20px var(--light-green);
+    cursor: pointer;
+}
+.btn:hover,
+.btn:focus {
+    background: var(--bright-red);
+    box-shadow: 2px 2px 20px var(--bright-red);
+    transform: scale(.9);
+}
